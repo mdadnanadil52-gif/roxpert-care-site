@@ -173,11 +173,11 @@ document.querySelector(".hero");
 
 const images = [
 
-  "./image/ro-service.png",
+  "ro-service.png",
 
-  "./image/ro-repair.png",
+  "ro-repair.png",
 
-  "./image/ro-installation.png"
+  "ro-installation.png"
 
 ];
 
