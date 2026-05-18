@@ -1,0 +1,221 @@
+<!-- index.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ROXpert CARE</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- LOADER -->
+
+    <div id="loader">
+      <div class="water-loader"></div>
+
+      <h2>ROXpert Care</h2>
+    </div>
+    <!-- HEADER -->
+
+    <header>
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="image/RO.png" alt="ROXpert Care Logo" class="logo-img" />
+      </div>
+      <div class="logo">ROXpert CARE</div>
+
+      <!-- MENU -->
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#technician">Technician</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SOCIAL -->
+
+      <div class="social-icons">
+        <a href="https://instagram.com/roxpertcare1435" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61588919970581"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- HOME PAGE -->
+
+    <section id="home" class="hero">
+      <h1>Best RO Repair Service</h1>
+
+      <p>RO Repair • Installation • Filter Change</p>
+
+      <a href="#contact" class="btn"> Book Complaint </a>
+    </section>
+
+    <!-- ABOUT PAGE -->
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+
+      <p>
+        We provide professional RO repair, installation and filter replacement
+        services at your doorstep. Our technicians are experienced and provide
+        same day service.
+      </p>
+    </section>
+
+    <!-- TECHNICIAN SECTION KE UPAR YE CODE LAGAO -->
+
+    <!-- SERVICES SECTION -->
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+
+      <div class="service-container">
+        <a href="ro-repair.html" class="service-card">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+
+          <h3>RO Repair</h3>
+
+          <p>Fast RO repairing service at your home.</p>
+        </a>
+
+        <a href="filter-change.html" class="service-card">
+          <i class="fa-solid fa-filter"></i>
+
+          <h3>Filter Change</h3>
+
+          <p>RO filter replacement and maintenance.</p>
+        </a>
+        <a href="ro-installation.html" class="service-card">
+          <i class="fa-solid fa-droplet"></i>
+
+          <h3>RO Installation</h3>
+
+          <p>New RO installation service available.</p>
+        </a>
+
+        <a href="amc-service.html" class="service-card">
+          <i class="fa-solid fa-water"></i>
+
+          <h3>AMC Service</h3>
+
+          <p>Annual maintenance contract service.</p>
+        </a>
+      </div>
+    </section>
+    <!-- TECHNICIAN PAGE -->
+
+    <section id="technician" class="technician">
+      <h2>Our Technicians</h2>
+
+      <div class="tech-container">
+        <div class="tech-card">
+          <img src="image/akhtar.jpeg" />
+
+          <h3>Akhtar Ansari</h3>
+
+          <p>RO Repair Expert</p>
+        </div>
+
+        <div class="tech-card">
+          <img src="image/adnan2.jpeg" />
+
+          <h3>Md Adnan</h3>
+
+          <p>Installation Technician</p>
+        </div>
+
+        <div class="tech-card">
+          <img src="image/arif.jpeg" />
+
+          <h3>Md Arif </h3>
+
+          <p>Filter Change Specialist</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+
+    <section id="contact" class="contact">
+      <div class="form-box">
+        <h2>Book Complaint</h2>
+
+        <form>
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="tel" placeholder="Mobile Number" required />
+
+          <input type="text" placeholder="Your Address" required />
+
+          <input type="text" placeholder="RO Brand" />
+
+          <textarea rows="5" placeholder="Write Your Problem"></textarea>
+
+          <button type="submit">Submit Complaint</button>
+        </form>
+      </div>
+    </section>
+    <!-- FORM KE NICHE YE CODE LAGAO -->
+
+    <!-- WHATSAPP BUTTON -->
+
+    <div class="whatsapp-box">
+      <a
+        href="https://wa.me/919328264327?text=Hello%20I%20Need%20RO%20Service"
+        target="_blank"
+        class="whatsapp-btn"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+
+        Chat On WhatsApp
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2026 Aqua Fresh RO Service</p>
+    </footer>
+    <!-- FIREBASE -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="js/first.js"></script>
+  </body>
+</html>
