@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 8%;
+  padding:10px 40px ;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -34,8 +34,15 @@ header {
 
 /* MENU */
 
-nav ul {
-  display: flex;
+nav ul{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:20px;
   list-style: none;
 }
 
@@ -435,7 +442,7 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   header {
     flex-direction: column;
     gap: 15px;
@@ -447,7 +454,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 38px;
+    font-size: 55px;
   }
 }
 /* CARD ANIMATION */
