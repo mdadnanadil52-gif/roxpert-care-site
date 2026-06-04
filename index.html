@@ -1,279 +1,2399 @@
-<!-- index.html -->
-
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-18195823583"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-18195823583");
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-18173952571"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-18173952571");
-    </script>
-    <!-- Event snippet for Submit lead form conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18195823583/9z42COKP4rgcEN_3uORD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Affordable RO Service in Ranchi | Repair, AMC & Installation | ₹299
-    </title>
-
+    <title>ROXpert Care | Best RO Service in Ranchi | ₹299 Onwards</title>
     <meta
       name="description"
-      content="Get expert RO water purifier service at your doorstep in Ranchi. Fast repair, installation, AMC plans, filter replacement, and maintenance for all major RO brands. Starting at ₹299."
+      content="Get expert RO water purifier service at your doorstep in Ranchi. Fast repair, installation, AMC plans, filter replacement. Starting ₹299. Call now!"
     />
-
-    <meta
-      name="keywords"
-      content="RO Service Ranchi, RO Repair Ranchi, RO Installation Ranchi, RO AMC Ranchi, Water Purifier Service Ranchi"
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
     />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- ICON -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195823583"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18195823583');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18173952571"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18173952571');
+    </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') { window.location = url; }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18195823583/9z42COKP4rgcEN_3uORD',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00C6FF",
+              accent: "#0072FF",
+              dark: "#050D1A",
+              darkCard: "#0A1628",
+              darkBorder: "#1a2d4a",
+            },
+            fontFamily: {
+              outfit: ["Outfit", "sans-serif"],
+              playfair: ['"Playfair Display"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Outfit", sans-serif;
+        background: #050d1a;
+        color: #e2e8f0;
+        overflow-x: hidden;
+      }
+
+      /* WATER RIPPLE BG */
+      .water-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background:
+          radial-gradient(
+            ellipse at 20% 50%,
+            rgba(0, 114, 255, 0.08) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse at 80% 20%,
+            rgba(0, 198, 255, 0.06) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse at 60% 80%,
+            rgba(0, 72, 160, 0.05) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+      .water-bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='rgba(0,198,255,0.03)' stroke-width='1'/%3E%3Ccircle cx='50' cy='50' r='20' fill='none' stroke='rgba(0,198,255,0.02)' stroke-width='1'/%3E%3C/svg%3E")
+          repeat;
+      }
+
+      /* GLASSMORPHISM */
+      .glass {
+        background: rgba(10, 22, 40, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 198, 255, 0.12);
+      }
+      .glass-light {
+        background: rgba(0, 198, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 198, 255, 0.15);
+      }
+
+      /* GRADIENT TEXT */
+      .grad-text {
+        background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .grad-text-gold {
+        background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* GLOWING BTN */
+      .btn-glow {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        box-shadow:
+          0 0 25px rgba(0, 198, 255, 0.4),
+          0 4px 15px rgba(0, 114, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+      .btn-glow:hover {
+        box-shadow:
+          0 0 40px rgba(0, 198, 255, 0.6),
+          0 8px 25px rgba(0, 114, 255, 0.5);
+        transform: translateY(-2px);
+      }
+      .btn-outline-glow {
+        border: 1.5px solid rgba(0, 198, 255, 0.5);
+        color: #00c6ff;
+        transition: all 0.3s;
+      }
+      .btn-outline-glow:hover {
+        background: rgba(0, 198, 255, 0.1);
+        border-color: #00c6ff;
+        box-shadow: 0 0 20px rgba(0, 198, 255, 0.3);
+        transform: translateY(-2px);
+      }
+
+      /* ANIMATED WATER DROPS */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-20px) scale(1.05);
+        }
+      }
+      @keyframes ripple {
+        0% {
+          transform: scale(0.8);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(2.5);
+          opacity: 0;
+        }
+      }
+      @keyframes glow-pulse {
+        0%,
+        100% {
+          opacity: 0.4;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes countUp {
+        from {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+      @keyframes spin-slow {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes wave-anim {
+        0% {
+          d: path("M0,50 Q25,20 50,50 Q75,80 100,50 L100,100 L0,100Z");
+        }
+        50% {
+          d: path("M0,50 Q25,80 50,50 Q75,20 100,50 L100,100 L0,100Z");
+        }
+        100% {
+          d: path("M0,50 Q25,20 50,50 Q75,80 100,50 L100,100 L0,100Z");
+        }
+      }
+
+      .float-anim {
+        animation: float 4s ease-in-out infinite;
+      }
+      .float-anim-2 {
+        animation: float 5s ease-in-out infinite 1s;
+      }
+      .float-anim-3 {
+        animation: float 6s ease-in-out infinite 2s;
+      }
+
+      .drop-shape {
+        width: 120px;
+        height: 140px;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 198, 255, 0.15),
+          rgba(0, 114, 255, 0.25)
+        );
+        border: 1px solid rgba(0, 198, 255, 0.3);
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .drop-shape::after {
+        content: "";
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        width: 30%;
+        height: 20%;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        transform: rotate(-30deg);
+      }
+
+      /* HERO BLOB */
+      .hero-blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        pointer-events: none;
+        animation: glow-pulse 4s ease-in-out infinite;
+      }
+
+      /* STAT COUNTER */
+      .stat-card {
+        background: rgba(0, 198, 255, 0.05);
+        border: 1px solid rgba(0, 198, 255, 0.15);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: all 0.3s;
+      }
+      .stat-card:hover {
+        background: rgba(0, 198, 255, 0.1);
+        border-color: rgba(0, 198, 255, 0.4);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 198, 255, 0.15);
+      }
+
+      /* SERVICE CARD */
+      .svc-card {
+        background: rgba(10, 22, 40, 0.8);
+        border: 1px solid rgba(0, 198, 255, 0.1);
+        border-radius: 20px;
+        padding: 2rem;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+      }
+      .svc-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s;
+      }
+      .svc-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(0, 198, 255, 0.4);
+        box-shadow: 0 20px 50px rgba(0, 198, 255, 0.15);
+      }
+      .svc-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      /* TEAM CARD */
+      .team-card {
+        background: rgba(10, 22, 40, 0.8);
+        border: 1px solid rgba(0, 198, 255, 0.1);
+        border-radius: 20px;
+        transition: all 0.3s;
+      }
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 198, 255, 0.1);
+        border-color: rgba(0, 198, 255, 0.3);
+      }
+
+      .avatar-ring {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: white;
+        box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+        margin: 0 auto;
+      }
+
+      /* FORM */
+      .form-input {
+        background: rgba(0, 198, 255, 0.04);
+        border: 1px solid rgba(0, 198, 255, 0.2);
+        border-radius: 12px;
+        padding: 0.9rem 1.2rem;
+        color: #e2e8f0;
+        width: 100%;
+        outline: none;
+        transition: all 0.3s;
+        font-family: "Outfit", sans-serif;
+      }
+      .form-input:focus {
+        border-color: #00c6ff;
+        box-shadow: 0 0 0 3px rgba(0, 198, 255, 0.1);
+        background: rgba(0, 198, 255, 0.07);
+      }
+      .form-input::placeholder {
+        color: rgba(148, 163, 184, 0.5);
+      }
+      select.form-input option {
+        background: #0a1628;
+        color: #e2e8f0;
+      }
+
+      /* NAV */
+      nav.scrolled {
+        background: rgba(5, 13, 26, 0.95) !important;
+        backdrop-filter: blur(20px) !important;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      /* MODAL */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .modal-overlay.active {
+        display: flex;
+        animation: fadeIn 0.3s;
+      }
+      .modal-box {
+        max-width: 500px;
+        width: 100%;
+        animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      /* TOAST */
+      .toast {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 9999;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .toast.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      /* HERO SECTION */
+      .hero-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* SCROLL REVEAL */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* SHIMMER LOADING */
+      .shimmer-text {
+        background: linear-gradient(
+          90deg,
+          #00c6ff 0%,
+          #ffffff 50%,
+          #00c6ff 100%
+        );
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: shimmer 3s linear infinite;
+      }
+
+      /* MOBILE NAV */
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 280px;
+        background: rgba(5, 13, 26, 0.98);
+        backdrop-filter: blur(20px);
+        z-index: 999;
+        border-left: 1px solid rgba(0, 198, 255, 0.2);
+        padding: 5rem 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .mobile-nav.open {
+        transform: translateX(0);
+        display: flex;
+      }
+
+      /* WHY US SECTION */
+      .why-card {
+        background: rgba(10, 22, 40, 0.6);
+        border: 1px solid rgba(0, 198, 255, 0.1);
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: all 0.3s;
+      }
+      .why-card:hover {
+        border-color: rgba(0, 198, 255, 0.3);
+        transform: translateY(-4px);
+      }
+
+      /* BRAND LOGOS */
+      .brand-pill {
+        background: rgba(0, 198, 255, 0.05);
+        border: 1px solid rgba(0, 198, 255, 0.15);
+        border-radius: 50px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        transition: all 0.3s;
+        color: #94a3b8;
+      }
+      .brand-pill:hover {
+        background: rgba(0, 198, 255, 0.1);
+        border-color: #00c6ff;
+        color: #00c6ff;
+      }
+
+      /* PROCESS STEPS */
+      .step-line {
+        position: absolute;
+        top: 40px;
+        left: calc(50% + 40px);
+        right: calc(-50% + 40px);
+        height: 2px;
+        background: linear-gradient(90deg, #00c6ff, transparent);
+      }
+
+      /* TESTIMONIAL */
+      .testi-card {
+        background: rgba(10, 22, 40, 0.8);
+        border: 1px solid rgba(0, 198, 255, 0.1);
+        border-radius: 20px;
+        padding: 1.8rem;
+        transition: all 0.3s;
+      }
+      .testi-card:hover {
+        border-color: rgba(0, 198, 255, 0.3);
+        transform: translateY(-4px);
+      }
+
+      /* FAQ */
+      .faq-item {
+        border-bottom: 1px solid rgba(0, 198, 255, 0.1);
+      }
+      .faq-q {
+        cursor: pointer;
+        padding: 1.2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          padding 0.3s;
+        color: #94a3b8;
+      }
+      .faq-a.open {
+        max-height: 200px;
+        padding-bottom: 1rem;
+      }
+      .faq-icon {
+        transition: transform 0.3s;
+      }
+      .faq-icon.rotated {
+        transform: rotate(180deg);
+      }
+
+      /* WHATSAPP FLOAT */
+      .wa-float {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        z-index: 500;
+      }
+      .wa-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #25d366;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s;
+        text-decoration: none;
+      }
+      .wa-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+      }
+
+      /* SCROLLBAR */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050d1a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#00c6ff, #0072ff);
+        border-radius: 3px;
+      }
+
+      /* SECTION DIVIDER */
+      .wave-divider {
+        overflow: hidden;
+        line-height: 0;
+      }
+      .wave-divider svg {
+        display: block;
+      }
+
+      /* PRICE TAG */
+      .price-tag {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 198, 255, 0.2),
+          rgba(0, 114, 255, 0.2)
+        );
+        border: 1px solid rgba(0, 198, 255, 0.3);
+        border-radius: 8px;
+        padding: 0.3rem 0.8rem;
+        font-weight: 700;
+        color: #00c6ff;
+        display: inline-block;
+      }
+
+      /* GLOW RING */
+      .glow-ring {
+        box-shadow:
+          0 0 0 1px rgba(0, 198, 255, 0.3),
+          0 0 20px rgba(0, 198, 255, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .desktop-nav {
+          display: none;
+        }
+        .hero-drops {
+          display: none;
+        }
+      }
+    </style>
   </head>
-
   <body>
-    <!-- LOADER -->
+    <div class="water-bg"></div>
 
-    <div id="loader">
-      <div class="water-loader"></div>
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-10"
+    >
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center"
+          >
+            <i class="fa-solid fa-droplet text-white text-lg"></i>
+          </div>
+          <span class="font-outfit font-800 text-xl text-white tracking-tight">
+            RO<span class="grad-text font-black">Xpert</span> Care
+          </span>
+        </a>
 
-      <h2>ROXpert Care</h2>
-    </div>
-    <!-- HEADER -->
-
-    <header>
-      <!-- LOGO -->
-      <div class="logo">
-        <img src="RO.png" alt="ROXpert Care Logo" class="logo-img" />
-      </div>
-      <div class="logo">ROXpert CARE</div>
-
-      <!-- MENU -->
-
-      <nav>
-        <ul>
+        <!-- Desktop Nav -->
+        <ul class="desktop-nav hidden md:flex items-center gap-8">
           <li>
-            <a href="#home">Home</a>
+            <a
+              href="#home"
+              class="text-slate-300 hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
           </li>
-
           <li>
-            <a href="#about">About</a>
+            <a
+              href="#about"
+              class="text-slate-300 hover:text-primary transition-colors font-medium"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a
+              href="#services"
+              class="text-slate-300 hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
           </li>
           <li>
-            <a href="#technician">Technician</a>
+            <a
+              href="#process"
+              class="text-slate-300 hover:text-primary transition-colors font-medium"
+              >How It Works</a
+            >
           </li>
-
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="#team"
+              class="text-slate-300 hover:text-primary transition-colors font-medium"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-slate-300 hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
           </li>
         </ul>
-      </nav>
 
-      <!-- SOCIAL -->
-
-      <div class="social-icons">
-        <a href="https://instagram.com/roxpert_care" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-
-        <a
-          href="https://www.facebook.com/profile.php?id=61588919970581"
-          target="_blank"
-        >
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </div>
-    </header>
-
-    <!-- HOME PAGE -->
-
-    <section id="home" class="hero">
-      <h1>Best RO Repair Service</h1>
-
-      <p>RO Repair • Installation • Filter Change</p>
-
-      <a href="#contact" class="btn"> Book Complaint </a>
-    </section>
-
-    <!-- ABOUT PAGE -->
-
-    <section id="about" class="about">
-      <h2>About Us</h2>
-
-      <p>
-        We provide professional RO repair, installation and filter replacement
-        services at your doorstep. Our technicians are experienced and provide
-        same day service.
-      </p>
-    </section>
-
-    <!-- TECHNICIAN SECTION KE UPAR YE CODE LAGAO -->
-
-    <!-- SERVICES SECTION -->
-
-    <section id="services" class="services">
-      <h2>Our Services</h2>
-
-      <div class="service-container">
-        <a href="ro-repair.html" class="service-card">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
-
-          <h3>RO Repair</h3>
-
-          <p>Fast RO repairing service at your home.</p>
-        </a>
-
-        <a href="filter-change.html" class="service-card">
-          <i class="fa-solid fa-filter"></i>
-
-          <h3>Filter Change</h3>
-
-          <p>RO filter replacement and maintenance.</p>
-        </a>
-        <a href="ro-installation.html" class="service-card">
-          <i class="fa-solid fa-droplet"></i>
-
-          <h3>RO Installation</h3>
-
-          <p>New RO installation service available.</p>
-        </a>
-
-        <a href="amc-service.html" class="service-card">
-          <i class="fa-solid fa-water"></i>
-
-          <h3>AMC Service</h3>
-
-          <p>Annual maintenance contract service.</p>
-        </a>
-      </div>
-    </section>
-    <!-- TECHNICIAN PAGE -->
-
-    <section id="technician" class="technician">
-      <h2>Our Technicians</h2>
-
-      <div class="tech-container">
-        <div class="tech-card">
-          <img src="" />
-
-          <h3>Akhtar Ansari</h3>
-
-          <p>RO Repair Expert</p>
-        </div>
-
-        <div class="tech-card">
-          <img src="" />
-
-          <h3>Md Adnan</h3>
-
-          <p>Installation Technician</p>
-        </div>
-
-        <div class="tech-card">
-          <img src="" />
-
-          <h3>Mohit Kumar</h3>
-
-          <p>Filter Change Specialist</p>
+        <!-- Right -->
+        <div class="flex items-center gap-3">
+          <a
+            href="tel:9204515207"
+            class="hidden md:flex items-center gap-2 text-slate-300 hover:text-primary transition-colors"
+          >
+            <i class="fa-solid fa-phone text-primary"></i>
+            <span class="font-semibold">92045 15207</span>
+          </a>
+          <a
+            href="#contact"
+            class="btn-glow text-white font-bold px-5 py-2.5 rounded-xl text-sm hidden md:block"
+            >Book Now</a
+          >
+          <button
+            id="mobileMenuBtn"
+            class="md:hidden text-slate-300 text-xl p-2"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- CONTACT PAGE -->
-
-    <section id="contact" class="contact">
-      <div class="form-box">
-        <h2>Book Complaint</h2>
-
-        <form>
-          <input type="text" placeholder="Your Name" required />
-
-          <input type="tel" placeholder="Mobile Number" required />
-
-          <input type="text" placeholder="Your Address" required />
-
-          <input type="text" placeholder="RO Brand" />
-
-          <textarea rows="5" placeholder="Write Your Problem"></textarea>
-
-          <button type="submit">Submit Complaint</button>
-        </form>
-      </div>
-    </section>
-    <!-- FORM KE NICHE YE CODE LAGAO -->
-
-    <!-- WHATSAPP BUTTON -->
-
-    <div class="whatsapp-box">
-      <a
-        href="https://wa.me/9204515207?text=Hello%20I%20Need%20RO%20Service"
-        target="_blank"
-        class="whatsapp-btn"
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="mobile-nav">
+      <button
+        id="mobileCloseBtn"
+        class="absolute top-4 right-4 text-slate-400 text-2xl"
       >
-        <i class="fa-brands fa-whatsapp"></i>
-
-        Chat On WhatsApp
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="flex items-center gap-3 mb-6">
+        <div
+          class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center"
+        >
+          <i class="fa-solid fa-droplet text-white"></i>
+        </div>
+        <span class="font-black text-xl text-white"
+          >RO<span class="grad-text">Xpert</span></span
+        >
+      </div>
+      <a
+        href="#home"
+        class="mob-link text-slate-200 hover:text-primary font-semibold text-lg py-2 border-b border-slate-800"
+        >Home</a
+      >
+      <a
+        href="#about"
+        class="mob-link text-slate-200 hover:text-primary font-semibold text-lg py-2 border-b border-slate-800"
+        >About</a
+      >
+      <a
+        href="#services"
+        class="mob-link text-slate-200 hover:text-primary font-semibold text-lg py-2 border-b border-slate-800"
+        >Services</a
+      >
+      <a
+        href="#process"
+        class="mob-link text-slate-200 hover:text-primary font-semibold text-lg py-2 border-b border-slate-800"
+        >How It Works</a
+      >
+      <a
+        href="#team"
+        class="mob-link text-slate-200 hover:text-primary font-semibold text-lg py-2 border-b border-slate-800"
+        >Team</a
+      >
+      <a
+        href="#contact"
+        class="mob-link text-slate-200 hover:text-primary font-semibold text-lg py-2"
+        >Contact</a
+      >
+      <a
+        href="#contact"
+        class="btn-glow text-white font-bold px-5 py-3 rounded-xl text-center mt-4"
+        >Book Now</a
+      >
+      <a
+        href="https://wa.me/9204515207"
+        target="_blank"
+        class="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold px-5 py-3 rounded-xl mt-2 transition-colors"
+      >
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
       </a>
     </div>
 
-    <!-- FOOTER -->
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="home" class="hero-section">
+      <!-- Blobs -->
+      <div
+        class="hero-blob"
+        style="
+          width: 600px;
+          height: 600px;
+          top: -100px;
+          left: -200px;
+          background: radial-gradient(
+            circle,
+            rgba(0, 114, 255, 0.12) 0%,
+            transparent 70%
+          );
+        "
+      ></div>
+      <div
+        class="hero-blob"
+        style="
+          width: 400px;
+          height: 400px;
+          bottom: 0;
+          right: -100px;
+          background: radial-gradient(
+            circle,
+            rgba(0, 198, 255, 0.1) 0%,
+            transparent 70%
+          );
+          animation-delay: 2s;
+        "
+      ></div>
 
-    <footer>
-      <p>© 2026 ROXpert Care Service</p>
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-10 pt-24 pb-16 w-full relative z-10"
+      >
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Left Text -->
+          <div class="space-y-6">
+            <div
+              class="inline-flex items-center gap-2 glass-light px-4 py-2 rounded-full text-primary font-semibold text-sm"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              Serving Delhi,Ahmedabad,Kolkata&Ranchi, Jharkhand
+              <span
+                class="w-2 h-2 bg-green-400 rounded-full animate-pulse"
+              ></span>
+            </div>
+
+            <h1
+              class="font-playfair font-bold text-4xl md:text-6xl leading-tight text-white"
+            >
+              India's Trusted<br />
+              <span class="grad-text">RO Water</span><br />
+              Service Center
+            </h1>
+
+            <p class="text-slate-400 text-lg leading-relaxed">
+              Professional repair, installation & AMC for all RO brands. Expert
+              technicians at your doorstep within
+              <strong class="text-primary">2–4 hours</strong>.
+            </p>
+
+            <div class="flex flex-wrap gap-3 text-sm">
+              <span class="flex items-center gap-1.5 text-slate-300"
+                ><i class="fa-solid fa-circle-check text-green-400"></i>
+                Same-Day Service</span
+              >
+              <span class="flex items-center gap-1.5 text-slate-300"
+                ><i class="fa-solid fa-circle-check text-green-400"></i> 30-Day
+                Warranty</span
+              >
+              <span class="flex items-center gap-1.5 text-slate-300"
+                ><i class="fa-solid fa-circle-check text-green-400"></i> No
+                Hidden Charges</span
+              >
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="btn-glow text-white font-bold px-7 py-3.5 rounded-xl flex items-center gap-2 text-base"
+              >
+                <i class="fa-solid fa-calendar-check"></i> Book Complaint
+              </a>
+              <a
+                href="https://wa.me/9204515207?text=Hello%20I%20Need%20RO%20Service"
+                target="_blank"
+                class="btn-outline-glow px-7 py-3.5 rounded-xl flex items-center gap-2 font-bold text-base"
+              >
+                <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp Us
+              </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-4 pt-4">
+              <div class="stat-card text-center">
+                <div
+                  class="text-2xl font-black grad-text counter"
+                  data-target="500"
+                >
+                  0
+                </div>
+                <div class="text-xs text-slate-400 mt-1">Happy Customers</div>
+              </div>
+              <div class="stat-card text-center">
+                <div class="text-2xl font-black grad-text">3+</div>
+                <div class="text-xs text-slate-400 mt-1">Years Experience</div>
+              </div>
+              <div class="stat-card text-center">
+                <div class="text-2xl font-black grad-text">₹299</div>
+                <div class="text-xs text-slate-400 mt-1">Starting Price</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Visual -->
+          <div
+            class="hero-drops relative flex items-center justify-center h-[450px]"
+          >
+            <!-- Central water drop -->
+            <div class="float-anim relative z-10">
+              <div
+                style="
+                  width: 200px;
+                  height: 230px;
+                  background: linear-gradient(
+                    160deg,
+                    rgba(0, 198, 255, 0.2),
+                    rgba(0, 114, 255, 0.35)
+                  );
+                  border: 1px solid rgba(0, 198, 255, 0.4);
+                  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  box-shadow:
+                    0 0 60px rgba(0, 198, 255, 0.25),
+                    inset 0 0 40px rgba(0, 198, 255, 0.1);
+                "
+              >
+                <div class="text-center">
+                  <i
+                    class="fa-solid fa-droplet text-5xl text-primary"
+                    style="filter: drop-shadow(0 0 20px rgba(0, 198, 255, 0.8))"
+                  ></i>
+                  <div class="text-white font-black text-xl mt-2">ROXpert</div>
+                  <div class="text-primary text-sm">Care</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Orbiting elements -->
+            <div class="absolute float-anim-2" style="top: 10%; left: 5%">
+              <div class="glass-light rounded-2xl p-3 text-center w-28">
+                <i
+                  class="fa-solid fa-screwdriver-wrench text-primary text-xl"
+                ></i>
+                <div class="text-white text-xs font-bold mt-1">RO Service</div>
+                <div class="text-slate-400 text-xs">₹299+</div>
+              </div>
+            </div>
+            <div class="absolute float-anim-3" style="top: 10%; right: 5%">
+              <div class="glass-light rounded-2xl p-3 text-center w-28">
+                <i class="fa-solid fa-filter text-primary text-xl"></i>
+                <div class="text-white text-xs font-bold mt-1">
+                  Filter Change
+                </div>
+                <div class="text-slate-400 text-xs">₹399+</div>
+              </div>
+            </div>
+            <div class="absolute float-anim" style="bottom: 20%; left: 0%">
+              <div class="glass-light rounded-2xl p-3 text-center w-28">
+                <i class="fa-solid fa-droplet text-primary text-xl"></i>
+                <div class="text-white text-xs font-bold mt-1">
+                  Installation
+                </div>
+                <div class="text-slate-400 text-xs">₹499+</div>
+              </div>
+            </div>
+            <div class="absolute float-anim-2" style="bottom: 20%; right: 0%">
+              <div class="glass-light rounded-2xl p-3 text-center w-28">
+                <i class="fa-solid fa-water text-primary text-xl"></i>
+                <div class="text-white text-xs font-bold mt-1">AMC Plans</div>
+                <div class="text-slate-400 text-xs"></div>
+              </div>
+            </div>
+
+            <!-- Ripple rings -->
+            <div
+              class="absolute inset-0 flex items-center justify-center pointer-events-none"
+            >
+              <div
+                style="
+                  width: 280px;
+                  height: 280px;
+                  border-radius: 50%;
+                  border: 1px solid rgba(0, 198, 255, 0.15);
+                  position: absolute;
+                  animation: ripple 3s linear infinite;
+                "
+              ></div>
+              <div
+                style="
+                  width: 350px;
+                  height: 350px;
+                  border-radius: 50%;
+                  border: 1px solid rgba(0, 198, 255, 0.1);
+                  position: absolute;
+                  animation: ripple 3s linear infinite 1s;
+                "
+              ></div>
+              <div
+                style="
+                  width: 420px;
+                  height: 420px;
+                  border-radius: 50%;
+                  border: 1px solid rgba(0, 198, 255, 0.07);
+                  position: absolute;
+                  animation: ripple 3s linear infinite 2s;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave -->
+      <div class="wave-divider absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0,30 Q360,60 720,30 Q1080,0 1440,30 L1440,60 L0,60Z"
+            fill="rgba(10,22,40,0.3)"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ══════════════ BRANDS ══════════════ -->
+    <section class="py-10 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <p
+          class="text-center text-slate-500 text-sm font-semibold uppercase tracking-widest mb-6"
+        >
+          We Service All Major Brands
+        </p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="brand-pill">KENT</span>
+          <span class="brand-pill">Aquaguard</span>
+          <span class="brand-pill">Pureit</span>
+          <span class="brand-pill">Livpure</span>
+          <span class="brand-pill">AO Smith</span>
+          <span class="brand-pill">HUL</span>
+          <span class="brand-pill">Blue Star</span>
+          <span class="brand-pill">Eureka Forbes</span>
+          <span class="brand-pill">Others</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about" class="py-20 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <!-- Left Image Collage -->
+          <div class="reveal grid grid-cols-2 gap-4">
+            <div
+              class="glass rounded-2xl overflow-hidden h-48 flex items-center justify-center"
+            >
+              <img
+                src="../image/ro-repair.png"
+                alt="RO Service Technician"
+                class="w-full h-full object-cover opacity-70"
+              />
+            </div>
+            <div
+              class="glass rounded-2xl overflow-hidden h-48 mt-8 flex items-center justify-center"
+            >
+              <img
+                src="../image/filter-change.png"
+                alt="Water Purifier"
+                class="w-full h-full object-cover opacity-70"
+              />
+            </div>
+            <div
+              class="glass rounded-2xl overflow-hidden h-48 -mt-4 flex items-center justify-center"
+            >
+              <img
+                src="../image/ro-installation.png"
+                alt="Clean Water"
+                class="w-full h-full object-cover opacity-70"
+              />
+            </div>
+            <div
+              class="glass rounded-2xl overflow-hidden h-48 mt-4 flex items-center justify-center"
+            >
+              <img
+                src="../image/amc-service.png"
+                alt="RO Filter"
+                class="w-full h-full object-cover opacity-70"
+              />
+            </div>
+          </div>
+
+          <!-- Right Text -->
+          <div class="reveal space-y-6">
+            <span
+              class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary"
+              style="
+                background: rgba(0, 198, 255, 0.1);
+                border: 1px solid rgba(0, 198, 255, 0.2);
+              "
+              >Who We Are</span
+            >
+            <h2
+              class="font-playfair text-4xl font-bold text-white leading-tight"
+            >
+              India's Trusted<br /><span class="grad-text"
+                >RO Service Experts</span
+              >
+            </h2>
+            <p class="text-slate-400 leading-relaxed">
+              ROXpert Care is India's premier RO service provider. We deliver
+              professional repair, installation, and maintenance services right
+              at your doorstep. With over 3 years of experience and 500+
+              satisfied customers, we're the most trusted name in water purifier
+              services.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="why-card flex items-start gap-3">
+                <div
+                  class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fa-solid fa-bolt text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="font-bold text-white text-sm">Fast Response</div>
+                  <div class="text-slate-400 text-xs mt-0.5">
+                    Technician in 2–4 hours
+                  </div>
+                </div>
+              </div>
+              <div class="why-card flex items-start gap-3">
+                <div
+                  class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fa-solid fa-shield-halved text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="font-bold text-white text-sm">
+                    6-Months Warranty
+                  </div>
+                  <div class="text-slate-400 text-xs mt-0.5">
+                    Quality guaranteed
+                  </div>
+                </div>
+              </div>
+              <div class="why-card flex items-start gap-3">
+                <div
+                  class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="fa-solid fa-indian-rupee-sign text-white text-sm"
+                  ></i>
+                </div>
+                <div>
+                  <div class="font-bold text-white text-sm">
+                    Transparent Pricing
+                  </div>
+                  <div class="text-slate-400 text-xs mt-0.5">
+                    No hidden charges
+                  </div>
+                </div>
+              </div>
+              <div class="why-card flex items-start gap-3">
+                <div
+                  class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fa-solid fa-star text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="font-bold text-white text-sm">5-Star Rated</div>
+                  <div class="text-slate-400 text-xs mt-0.5">
+                    500+ happy customers
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 pt-2">
+              <a
+                href="tel:9204515207"
+                class="btn-glow text-white font-bold px-6 py-3 rounded-xl flex items-center gap-2"
+              >
+                <i class="fa-solid fa-phone"></i> Call Now
+              </a>
+              <a
+                href="#services"
+                class="btn-outline-glow px-6 py-3 rounded-xl font-bold flex items-center gap-2"
+              >
+                Our Services <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SERVICES ══════════════ -->
+    <section id="services" class="py-20 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-14 reveal">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-4"
+            style="
+              background: rgba(0, 198, 255, 0.1);
+              border: 1px solid rgba(0, 198, 255, 0.2);
+            "
+            >What We Do</span
+          >
+          <h2 class="font-playfair text-4xl font-bold text-white">
+            Our <span class="grad-text">Services</span>
+          </h2>
+          <p class="text-slate-400 mt-3">
+            Click any service to see details & book instantly
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Repair -->
+          <div class="svc-card reveal" onclick="openServiceModal('repair')">
+            <div
+              class="w-14 h-14 rounded-2xl btn-glow flex items-center justify-center mb-4"
+            >
+              <i class="fa-solid fa-screwdriver-wrench text-white text-xl"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg mb-2">RO Repair</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              Fast repairing for all major brands at your home.
+            </p>
+            <div class="price-tag">Starting ₹299+</div>
+            <div
+              class="mt-4 flex items-center gap-1 text-primary text-sm font-semibold"
+            >
+              See Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </div>
+          </div>
+
+          <!-- Filter -->
+          <div class="svc-card reveal" onclick="openServiceModal('filter')">
+            <div
+              class="w-14 h-14 rounded-2xl btn-glow flex items-center justify-center mb-4"
+            >
+              <i class="fa-solid fa-filter text-white text-xl"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg mb-2">Filter Change</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              Original filter, membrane & full service replacement.
+            </p>
+            <div class="price-tag">Starting ₹399+</div>
+            <div
+              class="mt-4 flex items-center gap-1 text-primary text-sm font-semibold"
+            >
+              See Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </div>
+          </div>
+
+          <!-- Installation -->
+          <div class="svc-card reveal" onclick="openServiceModal('install')">
+            <div
+              class="w-14 h-14 rounded-2xl btn-glow flex items-center justify-center mb-4"
+            >
+              <i class="fa-solid fa-droplet text-white text-xl"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg mb-2">RO Installation</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              New RO setup with pipe fitting & complete configuration.
+            </p>
+            <div class="price-tag">Starting ₹499+</div>
+            <div
+              class="mt-4 flex items-center gap-1 text-primary text-sm font-semibold"
+            >
+              See Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </div>
+          </div>
+
+          <!-- AMC -->
+          <div class="svc-card reveal" onclick="openServiceModal('amc')">
+            <div
+              class="w-14 h-14 rounded-2xl btn-glow flex items-center justify-center mb-4"
+            >
+              <i class="fa-solid fa-water text-white text-xl"></i>
+            </div>
+            <h3 class="text-white font-bold text-lg mb-2">AMC Service</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              Annual maintenance with regular checkups & priority service.
+            </p>
+            <div class="price-tag">Starting ₹4k+/yr</div>
+            <div
+              class="mt-4 flex items-center gap-1 text-primary text-sm font-semibold"
+            >
+              See Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ HOW IT WORKS ══════════════ -->
+    <section id="process" class="py-20 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-14 reveal">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-4"
+            style="
+              background: rgba(0, 198, 255, 0.1);
+              border: 1px solid rgba(0, 198, 255, 0.2);
+            "
+            >Process</span
+          >
+          <h2 class="font-playfair text-4xl font-bold text-white">
+            How It <span class="grad-text">Works</span>
+          </h2>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="reveal text-center space-y-4">
+            <div
+              class="w-16 h-16 rounded-full btn-glow flex items-center justify-center mx-auto text-2xl font-black text-white"
+            >
+              1
+            </div>
+            <div
+              class="w-12 h-12 rounded-xl glass-light flex items-center justify-center mx-auto"
+            >
+              <i class="fa-solid fa-calendar-check text-primary text-xl"></i>
+            </div>
+            <h4 class="text-white font-bold">Book Online</h4>
+            <p class="text-slate-400 text-sm">
+              Fill the form or WhatsApp us with your complaint
+            </p>
+          </div>
+          <div class="reveal text-center space-y-4">
+            <div
+              class="w-16 h-16 rounded-full btn-glow flex items-center justify-center mx-auto text-2xl font-black text-white"
+            >
+              2
+            </div>
+            <div
+              class="w-12 h-12 rounded-xl glass-light flex items-center justify-center mx-auto"
+            >
+              <i class="fa-solid fa-phone text-primary text-xl"></i>
+            </div>
+            <h4 class="text-white font-bold">Get Confirmation</h4>
+            <p class="text-slate-400 text-sm">
+              Our team confirms within 30 minutes
+            </p>
+          </div>
+          <div class="reveal text-center space-y-4">
+            <div
+              class="w-16 h-16 rounded-full btn-glow flex items-center justify-center mx-auto text-2xl font-black text-white"
+            >
+              3
+            </div>
+            <div
+              class="w-12 h-12 rounded-xl glass-light flex items-center justify-center mx-auto"
+            >
+              <i class="fa-solid fa-person-walking text-primary text-xl"></i>
+            </div>
+            <h4 class="text-white font-bold">Technician Visits</h4>
+            <p class="text-slate-400 text-sm">
+              Expert arrives at your doorstep in 2–4 hours
+            </p>
+          </div>
+          <div class="reveal text-center space-y-4">
+            <div
+              class="w-16 h-16 rounded-full btn-glow flex items-center justify-center mx-auto text-2xl font-black text-white"
+            >
+              4
+            </div>
+            <div
+              class="w-12 h-12 rounded-xl glass-light flex items-center justify-center mx-auto"
+            >
+              <i class="fa-solid fa-check text-primary text-xl"></i>
+            </div>
+            <h4 class="text-white font-bold">Problem Solved!</h4>
+            <p class="text-slate-400 text-sm">
+              Service done with 6-Months warranty
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ TEAM ══════════════ -->
+    <section id="team" class="py-20 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-14 reveal">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-4"
+            style="
+              background: rgba(0, 198, 255, 0.1);
+              border: 1px solid rgba(0, 198, 255, 0.2);
+            "
+            >Our Team</span
+          >
+          <h2 class="font-playfair text-4xl font-bold text-white">
+            Expert <span class="grad-text">Technicians</span>
+          </h2>
+          <p class="text-slate-400 mt-3">
+            Trained professionals ready to serve you
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div class="team-card p-6 text-center reveal">
+            <div class="avatar-ring mb-4">AA</div>
+            <h3 class="text-white font-bold text-lg">Akhtar Ansari</h3>
+            <p class="text-slate-400 text-sm">RO Repair Expert</p>
+            <div
+              class="mt-3 inline-flex items-center gap-1.5 glass-light px-3 py-1.5 rounded-full text-xs text-primary font-semibold"
+            >
+              <i class="fa-solid fa-star text-yellow-400"></i> 5 Years
+              Experience
+            </div>
+          </div>
+          <div class="team-card p-6 text-center reveal">
+            <div class="avatar-ring mb-4">MA</div>
+            <h3 class="text-white font-bold text-lg">Md Adnan</h3>
+            <p class="text-slate-400 text-sm">Installation Technician</p>
+            <div
+              class="mt-3 inline-flex items-center gap-1.5 glass-light px-3 py-1.5 rounded-full text-xs text-primary font-semibold"
+            >
+              <i class="fa-solid fa-star text-yellow-400"></i> 3 Years
+              Experience
+            </div>
+          </div>
+          <div class="team-card p-6 text-center reveal">
+            <div class="avatar-ring mb-4">MK</div>
+            <h3 class="text-white font-bold text-lg">Mohit Kumar</h3>
+            <p class="text-slate-400 text-sm">Filter Change Specialist</p>
+            <div
+              class="mt-3 inline-flex items-center gap-1.5 glass-light px-3 py-1.5 rounded-full text-xs text-primary font-semibold"
+            >
+              <i class="fa-solid fa-star text-yellow-400"></i> 4 Years
+              Experience
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ TESTIMONIALS ══════════════ -->
+    <section id="testimonials" class="py-20 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-14 reveal">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-4"
+            style="
+              background: rgba(0, 198, 255, 0.1);
+              border: 1px solid rgba(0, 198, 255, 0.2);
+            "
+            >Reviews</span
+          >
+          <h2 class="font-playfair text-4xl font-bold text-white">
+            What Customers <span class="grad-text">Say</span>
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="testi-card reveal">
+            <div class="flex items-center gap-1 mb-3">
+              <i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              "Excellent service! Technician came within 2 hours and fixed my
+              Kent RO perfectly. Very professional and honest pricing."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold"
+              >
+                RK
+              </div>
+              <div>
+                <div class="text-white text-sm font-semibold">Rajesh Kumar</div>
+                <div class="text-slate-500 text-xs">Dumdum,Kolkata</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="flex items-center gap-1 mb-3">
+              <i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              "Booked via WhatsApp, got a callback in 20 minutes. Filter change
+              done quickly with genuine parts. Highly recommend!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-full bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center text-white text-sm font-bold"
+              >
+                PS
+              </div>
+              <div>
+                <div class="text-white text-sm font-semibold">Priya Singh</div>
+                <div class="text-slate-500 text-xs">Lalpur, Ranchi</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="flex items-center gap-1 mb-3">
+              <i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star text-yellow-400"></i
+              ><i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              "Took AMC plan for my Aquaguard. Best decision! Regular checkups
+              ensure my water is always pure. Great value."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-full bg-gradient-to-br from-green-500 to-teal-400 flex items-center justify-center text-white text-sm font-bold"
+              >
+                AM
+              </div>
+              <div>
+                <div class="text-white text-sm font-semibold">Anil Mehta</div>
+                <div class="text-slate-500 text-xs">Ratu Road, Ranchi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FAQ ══════════════ -->
+    <section id="faq" class="py-20 relative z-10">
+      <div class="max-w-3xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-12 reveal">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-4"
+            style="
+              background: rgba(0, 198, 255, 0.1);
+              border: 1px solid rgba(0, 198, 255, 0.2);
+            "
+            >FAQ</span
+          >
+          <h2 class="font-playfair text-4xl font-bold text-white">
+            Common <span class="grad-text">Questions</span>
+          </h2>
+        </div>
+        <div class="glass rounded-2xl p-6 divide-y divide-slate-800 reveal">
+          <div class="faq-item">
+            <div
+              class="faq-q text-white font-semibold"
+              onclick="toggleFaq(this)"
+            >
+              How quickly will a technician arrive?
+              <i class="fa-solid fa-chevron-down faq-icon text-primary"></i>
+            </div>
+            <div class="faq-a">
+              Our technicians typically arrive within 2–4 hours of booking. For
+              urgent cases, we try our best to dispatch same-day.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-q text-white font-semibold"
+              onclick="toggleFaq(this)"
+            >
+              What brands do you service?
+              <i class="fa-solid fa-chevron-down faq-icon text-primary"></i>
+            </div>
+            <div class="faq-a">
+              We service all major brands including KENT, Aquaguard, Pureit,
+              Livpure, AO Smith, HUL, Blue Star, Eureka Forbes and more.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-q text-white font-semibold"
+              onclick="toggleFaq(this)"
+            >
+              Do you provide a warranty on service?
+              <i class="fa-solid fa-chevron-down faq-icon text-primary"></i>
+            </div>
+            <div class="faq-a">
+              Yes! All our services come with a 30-day warranty. If the same
+              issue recurs within 30 days, we'll fix it free of charge.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-q text-white font-semibold"
+              onclick="toggleFaq(this)"
+            >
+              What is AMC and why do I need it?
+              <i class="fa-solid fa-chevron-down faq-icon text-primary"></i>
+            </div>
+            <div class="faq-a">
+              AMC (Annual Maintenance Contract) includes 2 scheduled visits,
+              filter checks, and priority service for the whole year. It's ideal
+              if you want hassle-free pure water year-round.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-q text-white font-semibold"
+              onclick="toggleFaq(this)"
+            >
+              Are there any hidden charges?
+              <i class="fa-solid fa-chevron-down faq-icon text-primary"></i>
+            </div>
+            <div class="faq-a">
+              No! We believe in 100% transparent pricing. The technician will
+              provide a full quote before starting any work. You pay only what
+              was agreed.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT / BOOK FORM ══════════════ -->
+    <section id="contact" class="py-20 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center mb-14 reveal">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary mb-4"
+            style="
+              background: rgba(0, 198, 255, 0.1);
+              border: 1px solid rgba(0, 198, 255, 0.2);
+            "
+            >Book Now</span
+          >
+          <h2 class="font-playfair text-4xl font-bold text-white">
+            Book a <span class="grad-text">Complaint</span>
+          </h2>
+          <p class="text-slate-400 mt-3">
+            Fill the form — our technician will call you within
+            <strong class="text-primary">30 minutes</strong>
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-5 gap-10 items-start">
+          <!-- Contact Info -->
+          <div class="md:col-span-2 space-y-6 reveal">
+            <div class="glass rounded-2xl p-6 flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-phone text-white"></i>
+              </div>
+              <div>
+                <div class="text-slate-400 text-sm">Call Us</div>
+                <a
+                  href="tel:9204515207"
+                  class="text-white font-bold text-lg hover:text-primary transition-colors"
+                  >+91 92045 15207</a
+                >
+              </div>
+              
+            </div>
+            <div class="glass rounded-2xl p-6 flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-green-600 flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-brands fa-whatsapp text-white text-xl"></i>
+              </div>
+              <div>
+                <div class="text-slate-400 text-sm">WhatsApp</div>
+                <a
+                  href="https://wa.me/9204515207"
+                  target="_blank"
+                  class="text-white font-bold text-lg hover:text-green-400 transition-colors"
+                  >Chat Now</a
+                >
+              </div>
+            </div>
+            <div class="glass rounded-2xl p-6 flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-location-dot text-white"></i>
+              </div>
+              <div>
+                <div class="text-slate-400 text-sm">Service Area</div>
+                <div class="text-white font-bold text-lg">
+                  Delhi,Ahmedabad,Kolkata & Ranchi
+                </div>
+              </div>
+            </div>
+            <div class="glass rounded-2xl p-6 flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-xl btn-glow flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-clock text-white"></i>
+              </div>
+              <div>
+                <div class="text-slate-400 text-sm">Working Hours</div>
+                <div class="text-white font-bold">08:00 AM – 06:00 PM</div>
+                <div class="text-slate-400 text-xs">All 7 Days</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="md:col-span-3 reveal">
+            <div class="glass rounded-2xl p-8">
+              <form id="complaintForm" onsubmit="submitForm(event)" novalidate>
+                <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                  <div>
+                    <label
+                      class="block text-slate-300 text-sm font-semibold mb-2"
+                      >Your Name *</label
+                    >
+                    <input
+                      type="text"
+                      id="fname"
+                      class="form-input"
+                      placeholder="e.g. Rahul Kumar"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-slate-300 text-sm font-semibold mb-2"
+                      >Mobile Number *</label
+                    >
+                    <input
+                      type="tel"
+                      id="fphone"
+                      class="form-input"
+                      placeholder="10-digit number"
+                      required
+                      maxlength="10"
+                    />
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <label class="block text-slate-300 text-sm font-semibold mb-2"
+                    >Your Address *</label
+                  >
+                  <input
+                    type="text"
+                    id="faddress"
+                    class="form-input"
+                    placeholder="Area, Locality "
+                    required
+                  />
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                  <div>
+                    <label
+                      class="block text-slate-300 text-sm font-semibold mb-2"
+                      >RO Brand</label
+                    >
+                    <select id="fbrand" class="form-input">
+                      <option value="">Select Brand</option>
+                      <option>Kent</option>
+                      <option>Aquaguard</option>
+                      <option>Pureit</option>
+                      <option>HUL</option>
+                      <option>Livpure</option>
+                      <option>AO Smith</option>
+                      <option>Blue Star</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      class="block text-slate-300 text-sm font-semibold mb-2"
+                      >Service Type</label
+                    >
+                    <select id="fservice" class="form-input">
+                      <option value="">Select Service</option>
+                      <option>RO Repair</option>
+                      <option>Filter Change</option>
+                      <option>RO Installation</option>
+                      <option>AMC Service</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label class="block text-slate-300 text-sm font-semibold mb-2"
+                    >Problem Description</label
+                  >
+                  <textarea
+                    id="fproblem"
+                    rows="4"
+                    class="form-input resize-none"
+                    placeholder="Describe your RO problem in detail..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  id="submitBtn"
+                  class="btn-glow w-full text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 text-base"
+                >
+                  <i class="fa-solid fa-paper-plane"></i> Submit Complaint
+                </button>
+                <p class="text-slate-500 text-xs text-center mt-3">
+                  By submitting, you agree to receive a callback from our team.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer class="relative z-10 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-14">
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+          <div class="md:col-span-2">
+            <a href="#home" class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-xl btn-glow flex items-center justify-center"
+              >
+                <i class="fa-solid fa-droplet text-white"></i>
+              </div>
+              <span class="font-black text-xl text-white"
+                >RO<span class="grad-text">Xpert</span> Care</span
+              >
+            </a>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              India's trusted RO water purifier service. Professional repair,
+              installation & AMC for all brands.
+            </p>
+            <div class="flex items-center gap-3">
+              <a
+                href="https://instagram.com/roxpert_care"
+                target="_blank"
+                class="w-9 h-9 glass-light rounded-lg flex items-center justify-center text-slate-400 hover:text-primary transition-colors"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61588919970581"
+                target="_blank"
+                class="w-9 h-9 glass-light rounded-lg flex items-center justify-center text-slate-400 hover:text-primary transition-colors"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://wa.me/9204515207"
+                target="_blank"
+                class="w-9 h-9 glass-light rounded-lg flex items-center justify-center text-slate-400 hover:text-green-400 transition-colors"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="#home"
+                  class="text-slate-400 hover:text-primary transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-slate-400 hover:text-primary transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-slate-400 hover:text-primary transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#process"
+                  class="text-slate-400 hover:text-primary transition-colors"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="text-slate-400 hover:text-primary transition-colors"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-slate-400 hover:text-primary transition-colors"
+                  >Book Complaint</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Contact</h4>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center gap-2 text-slate-400">
+                <i class="fa-solid fa-phone text-primary w-4"></i>
+                <a href="tel:9204515207" class="hover:text-primary"
+                  >+91 92045 15207</a
+                >
+                <i class="fa-solid fa-phone text-primary w-4"></i>
+                <a href="tel:9310416139" class="hover:text-primary"
+                  >+91 9310416139</a
+                >
+              </li>
+              <li class="flex items-center gap-2 text-slate-400">
+                <i class="fa-brands fa-whatsapp text-green-400 w-4"></i>
+                <a href="https://wa.me/9204515207" class="hover:text-primary"
+                  >WhatsApp Us</a
+                >
+              </li>
+              <li class="flex items-start gap-2 text-slate-400">
+                <i class="fa-solid fa-location-dot text-primary w-4 mt-0.5"></i>
+                Delhi,Ahmedabad,Kolkata&Ranchi
+              </li>
+              <li class="flex items-center gap-2 text-slate-400">
+                <i class="fa-solid fa-clock text-primary w-4"></i> 8AM – 6PM,
+                All Days
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-slate-500"
+        >
+          <p>&copy; 2026 ROXpert Care Service. All Rights Reserved.</p>
+          <p>Made with <span class="text-red-500">♥</span> in India</p>
+        </div>
+      </div>
     </footer>
-    <!-- FIREBASE -->
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <!-- WhatsApp Float -->
+    <div class="wa-float">
+      <a
+        href="https://wa.me/9204515207?text=Hello%20I%20Need%20RO%20Service"
+        target="_blank"
+        class="wa-btn"
+      >
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <span class="hidden sm:inline">WhatsApp Us</span>
+      </a>
+    </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <!-- ══════════════ SERVICE MODAL ══════════════ -->
+    <div
+      class="modal-overlay"
+      id="serviceModal"
+      onclick="closeModalOutside(event)"
+    >
+      <div class="modal-box glass rounded-2xl overflow-hidden max-w-md w-full">
+        <div class="p-0">
+          <div
+            class="relative h-2 bg-gradient-to-r from-primary to-accent"
+          ></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  id="modalIcon"
+                  class="w-12 h-12 rounded-xl btn-glow flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-screwdriver-wrench text-white"></i>
+                </div>
+                <div>
+                  <h3 id="modalTitle" class="text-white font-bold text-xl">
+                    RO Repair
+                  </h3>
+                  <p id="modalSub" class="text-slate-400 text-sm">
+                    Professional service
+                  </p>
+                </div>
+              </div>
+              <button
+                onclick="closeServiceModal()"
+                class="text-slate-400 hover:text-white w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-700 transition-colors text-xl"
+              >
+                &times;
+              </button>
+            </div>
+            <ul id="modalFeatures" class="space-y-2 mb-5"></ul>
+            <div
+              class="flex items-center justify-between glass-light rounded-xl p-4 mb-5"
+            >
+              <div>
+                <div class="text-slate-400 text-xs">Starting From</div>
+                <div id="modalPrice" class="grad-text font-black text-2xl">
+                  ₹299
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-slate-400 text-xs">Service Time</div>
+                <div id="modalTime" class="text-white font-bold">1–2 Hours</div>
+              </div>
+            </div>
+            <button
+              onclick="bookFromModal()"
+              class="btn-glow w-full text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-calendar-check"></i> Book This Service Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="first.js"></script>
+    <!-- ══════════════ SUCCESS OVERLAY ══════════════ -->
+    <div
+      id="successOverlay"
+      class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center"
+    >
+      <div class="text-center space-y-6 p-8 max-w-sm mx-auto">
+        <div class="relative w-24 h-24 mx-auto">
+          <div
+            class="w-24 h-24 rounded-full btn-glow flex items-center justify-center mx-auto"
+            style="animation: float 2s ease-in-out infinite"
+          >
+            <i class="fa-solid fa-check text-white text-3xl"></i>
+          </div>
+          <div
+            class="absolute inset-0 rounded-full border-2 border-primary animate-ping opacity-30"
+          ></div>
+        </div>
+        <h2 class="font-playfair text-3xl font-bold text-white">
+          Complaint Booked!
+        </h2>
+        <p class="text-slate-300">
+          Thank you! Our technician will contact you within
+          <strong class="text-primary">30 minutes</strong>. We're on our way to
+          fix your RO!
+        </p>
+        <div class="flex flex-col gap-3">
+          <button
+            onclick="closeSuccess()"
+            class="btn-outline-glow px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+          </button>
+          <a
+            href="https://wa.me/9204515207?text=Hello%20I%20Need%20RO%20Service"
+            target="_blank"
+            class="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
+          >
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div
+      id="toast"
+      class="toast glass rounded-xl px-5 py-3 flex items-center gap-3 max-w-xs"
+    >
+      <i
+        id="toastIcon"
+        class="fa-solid fa-check-circle text-green-400 text-xl"
+      ></i>
+      <span id="toastMsg" class="text-white font-semibold text-sm"
+        >Success!</span
+      >
+    </div>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <script>
+      // ── EMAILJS INIT ──────────────────────────────────────────────
+      // Replace with your actual EmailJS Public Key, Service ID, Template ID
+      emailjs.init("TNXA8Dfck--lJjBne"); // TODO: replace with your key
+
+      const EMAILJS_SERVICE = "service_h2nbuoq"; // TODO: your service id
+      const EMAILJS_TEMPLATE = "template_cbnk6hd"; // TODO: your template id
+
+      // ── LOCAL LEADS STORAGE ───────────────────────────────────────
+      let leads = JSON.parse(localStorage.getItem("roxpert_leads") || "[]");
+
+      // ── NAVBAR SCROLL ─────────────────────────────────────────────
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) navbar.classList.add("scrolled");
+        else navbar.classList.remove("scrolled");
+      });
+
+      // ── MOBILE NAV ────────────────────────────────────────────────
+      const mobileNav = document.getElementById("mobileNav");
+      document
+        .getElementById("mobileMenuBtn")
+        .addEventListener("click", () => mobileNav.classList.add("open"));
+      document
+        .getElementById("mobileCloseBtn")
+        .addEventListener("click", () => mobileNav.classList.remove("open"));
+      document
+        .querySelectorAll(".mob-link")
+        .forEach((l) =>
+          l.addEventListener("click", () => mobileNav.classList.remove("open")),
+        );
+
+      // ── SCROLL REVEAL ─────────────────────────────────────────────
+      const revealEls = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+              setTimeout(() => e.target.classList.add("visible"), i * 80);
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      revealEls.forEach((el) => io.observe(el));
+
+      // ── COUNTER ANIMATION ─────────────────────────────────────────
+      const counters = document.querySelectorAll(".counter");
+      const co = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.dataset.target);
+            let current = 0;
+            const step = target / 60;
+            const update = () => {
+              current += step;
+              if (current < target) {
+                el.textContent = Math.floor(current) + "+";
+                requestAnimationFrame(update);
+              } else el.textContent = target + "+";
+            };
+            update();
+            co.unobserve(el);
+          }
+        });
+      });
+      counters.forEach((c) => co.observe(c));
+
+      // ── SERVICE MODAL ─────────────────────────────────────────────
+      const services = {
+        repair: {
+          icon: "fa-screwdriver-wrench",
+          title: "RO Repair Service",
+          sub: "Fast repair at your doorstep",
+          price: "₹299",
+          time: "1–2 Hours",
+          features: [
+            "All major brands supported",
+            "Genuine spare parts used",
+            "Same-day service available",
+            "Free diagnosis included",
+            "30-day service warranty",
+            "Transparent pricing",
+          ],
+        },
+        filter: {
+          icon: "fa-filter",
+          title: "Filter Change Service",
+          sub: "Original filters & membrane replacement",
+          price: "₹399",
+          time: "1–3 Hours",
+          features: [
+            "Sediment filter replacement",
+            "Carbon filter change",
+            "RO membrane replacement",
+            "UV lamp change",
+            "Full service cleaning",
+            "30-day warranty on parts",
+          ],
+        },
+        install: {
+          icon: "fa-droplet",
+          title: "RO Installation Service",
+          sub: "Complete new RO setup",
+          price: "₹499",
+          time: "2–4 Hours",
+          features: [
+            "Any brand installation",
+            "Pipe fitting included",
+            "Wall mounting done",
+            "Full system testing",
+            "Usage guidance provided",
+            "30-day installation warranty",
+          ],
+        },
+        amc: {
+          icon: "fa-water",
+          title: "AMC Service Plan",
+          sub: "Annual maintenance contract",
+          price: "₹999/yr",
+          time: "Annual Plan",
+          features: [
+            "2 scheduled visits/year",
+            "Filter check each visit",
+            "Priority service booking",
+            "Free emergency call (1/yr)",
+            "Discounts on parts",
+            "Water quality testing",
+          ],
+        },
+      };
+
+      function openServiceModal(type) {
+        const s = services[type];
+        document.getElementById("modalIcon").innerHTML =
+          `<i class="fa-solid ${s.icon} text-white"></i>`;
+        document.getElementById("modalTitle").textContent = s.title;
+        document.getElementById("modalSub").textContent = s.sub;
+        document.getElementById("modalPrice").textContent = s.price;
+        document.getElementById("modalTime").textContent = s.time;
+        document.getElementById("modalFeatures").innerHTML = s.features
+          .map(
+            (f) =>
+              `<li class="flex items-center gap-2 text-sm text-slate-300"><i class="fa-solid fa-circle-check text-primary"></i>${f}</li>`,
+          )
+          .join("");
+        document.getElementById("serviceModal").classList.add("active");
+      }
+      function closeServiceModal() {
+        document.getElementById("serviceModal").classList.remove("active");
+      }
+      function closeModalOutside(e) {
+        if (e.target.id === "serviceModal") closeServiceModal();
+      }
+      function bookFromModal() {
+        closeServiceModal();
+        document
+          .getElementById("contact")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      // ── FAQ ───────────────────────────────────────────────────────
+      function toggleFaq(el) {
+        const ans = el.nextElementSibling;
+        const icon = el.querySelector(".faq-icon");
+        const isOpen = ans.classList.contains("open");
+        document
+          .querySelectorAll(".faq-a")
+          .forEach((a) => a.classList.remove("open"));
+        document
+          .querySelectorAll(".faq-icon")
+          .forEach((i) => i.classList.remove("rotated"));
+        if (!isOpen) {
+          ans.classList.add("open");
+          icon.classList.add("rotated");
+        }
+      }
+
+      // ── FORM SUBMIT ───────────────────────────────────────────────
+      async function submitForm(e) {
+        e.preventDefault();
+        const name = document.getElementById("fname").value.trim();
+        const phone = document.getElementById("fphone").value.trim();
+        const address = document.getElementById("faddress").value.trim();
+        const brand = document.getElementById("fbrand").value;
+        const service = document.getElementById("fservice").value;
+        const problem = document.getElementById("fproblem").value.trim();
+
+        if (!name || !phone || !address) {
+          showToast("Please fill required fields!", "error");
+          return;
+        }
+        if (phone.length !== 10 || isNaN(phone)) {
+          showToast("Enter a valid 10-digit mobile number!", "error");
+          return;
+        }
+
+        const btn = document.getElementById("submitBtn");
+        btn.innerHTML =
+          '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...';
+        btn.disabled = true;
+
+        const lead = {
+          id: Date.now(),
+          date: new Date().toLocaleString("en-IN"),
+          name,
+          phone,
+          address,
+          brand,
+          service,
+          problem,
+          status: "New",
+        };
+
+        // Save to localStorage
+        leads.push(lead);
+        localStorage.setItem("roxpert_leads", JSON.stringify(leads));
+
+        // Send Email via EmailJS
+        try {
+          await emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE, {
+            from_name: name,
+            phone: phone,
+            address: address,
+            brand: brand || "Not specified",
+            service: service || "Not specified",
+            problem: problem || "Not specified",
+            date: lead.date,
+            to_email: "roxpertcare@gmail.com",
+          });
+        } catch (err) {
+          // Email failed but still save lead locally
+          console.warn("Email failed:", err);
+        }
+
+        // Show success
+        btn.innerHTML =
+          '<i class="fa-solid fa-paper-plane"></i> Submit Complaint';
+        btn.disabled = false;
+        document.getElementById("complaintForm").reset();
+        document.getElementById("successOverlay").style.display = "flex";
+      }
+
+      function closeSuccess() {
+        document.getElementById("successOverlay").style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // ── EXCEL EXPORT ──────────────────────────────────────────────
+      function exportToExcel() {
+        if (leads.length === 0) {
+          showToast("No leads to export yet!", "error");
+          return;
+        }
+        const data = leads.map((l) => ({
+          ID: l.id,
+          Date: l.date,
+          Name: l.name,
+          Phone: l.phone,
+          Address: l.address,
+          "RO Brand": l.brand,
+          Service: l.service,
+          Problem: l.problem,
+          Status: l.status,
+        }));
+        const ws = XLSX.utils.json_to_sheet(data);
+        ws["!cols"] = [
+          { wch: 10 },
+          { wch: 20 },
+          { wch: 20 },
+          { wch: 15 },
+          { wch: 30 },
+          { wch: 15 },
+          { wch: 18 },
+          { wch: 40 },
+          { wch: 10 },
+        ];
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "ROXpert Leads");
+        const fname = `ROXpert_Leads_${new Date().toLocaleDateString("en-IN").replace(/\//g, "-")}.xlsx`;
+        XLSX.writeFile(wb, fname);
+        showToast(`Exported ${leads.length} leads!`, "success");
+      }
+
+      // ── TOAST ─────────────────────────────────────────────────────
+      function showToast(msg, type = "success") {
+        const toast = document.getElementById("toast");
+        const icon = document.getElementById("toastIcon");
+        document.getElementById("toastMsg").textContent = msg;
+        icon.className =
+          type === "success"
+            ? "fa-solid fa-check-circle text-green-400 text-xl"
+            : "fa-solid fa-triangle-exclamation text-red-400 text-xl";
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 3000);
+      }
+    </script>
   </body>
 </html>
